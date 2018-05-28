@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.propertyActivity.CardActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/stari_grad"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="25dp" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="top"
+        android:padding="16dp">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="30dp">
+
+
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingRight="5dp"
+                        android:text="STARI GRAD"
+                        android:background="@drawable/round"
+                        android:textSize="18dp"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="16dp" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Travnik"
+                        android:background="@drawable/round"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="3dp"
+                        android:paddingRight="5dp"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/tv_besplatno">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <customfonts.MyTextView
+                android:layout_weight="1"
+                android:id="@+id/mtv_text"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                android:textColor="@color/text"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="left" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/devider"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/devider"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/devider"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+
+        <LinearLayout
+            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_broj"
+                    android:layout_weight="1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/phone"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"/>
+
+                <customfonts.MyTextView
+                    android:layout_weight="1"
+                    android:id="@+id/call"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Pozovi"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/icons"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_email"
+                    android:layout_weight="1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/mail"
+                    android:layout_gravity="center"
+                    android:gravity="bottom" />
+
+
+                <customfonts.MyTextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="E-mail"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/icons" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_lokacija"
+                    android:layout_weight="1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    android:layout_gravity="center"
+                    android:gravity="bottom" />
+
+
+
+                <customfonts.MyTextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Lokacija"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/icons" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"  >
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_weight="1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/share"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"/>
+
+
+
+                <customfonts.MyTextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/share"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Podijeli"
+                    android:layout_gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/icons"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_besplatno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pink"
+        android:text="Besplatan ulaz za takmičare"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
